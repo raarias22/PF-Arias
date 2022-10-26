@@ -10,7 +10,7 @@ body{
 
 nav {
   background-color: rgb(44, 44, 44);
-  position: center;
+  position: static;
   top: 0;
   width: 100%;
   text-align: center; 
@@ -23,9 +23,9 @@ button{
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 10px;
-  border: 1px solid rgb(224, 18, 18);
+  border: 1px solid rgb(0, 0, 0);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: rgb(224, 18, 18);
+  color: rgb(0, 0, 0);
 
 }
 
@@ -34,7 +34,7 @@ button{
 }
 
 button:hover{
-  background-color:rgb(224, 18, 18)
+  background-color:rgb(0, 0, 0)
 }
 
 nav a{
@@ -77,38 +77,6 @@ h3{
   padding: 30px;
 }
 
-.full-width-image1 {
-  min-width: 336px;
-  max-width: 100%;
-  width: 100%;
-  min-height: 280px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.full-width-image2 {
-  min-width: 336px;
-  max-width: 100%;
-  width: 100%;
-  min-height: 280px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.full-width-image3 {
-  min-width: 200px;
-  max-width: 100%;
-  width: 100%;
-  min-height: 280px;
-  height: 500px;
-  object-fit: cover;
-}
-
-footer{
-  overflow: left;
-  list-style: none;
-  display: inline-block;
-}
 
 
 .principal-text {
@@ -119,12 +87,7 @@ footer{
   padding: 100px;
 }
 
-div.gallery {
-  margin: 20px;
-  border: 1px solid #ccc;
-  width: 400px;
-  float: left;
-}
+
 
 div.gallery:hover {
   border: 1px solid rgb(224, 18, 18);
