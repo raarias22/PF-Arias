@@ -66,6 +66,8 @@ h1{
   padding: 30px;
 }
 
+
+
 h2{
   text-align: center;
   margin: auto;
@@ -88,6 +90,21 @@ h3{
   padding: 100px;
 }
 
+div.alerta{
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 div.gallery:hover {
@@ -111,3 +128,4 @@ div.desc {
   width: 100%;
   padding: 100px;
 }
+
