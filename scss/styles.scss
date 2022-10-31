@@ -1,9 +1,12 @@
+@import "variables";
+
 *{
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: rgba(114, 98, 52, 0.555);
+    background-color: $color-fondo;
     font-family: 'Roboto', sans-serif;
     margin: 0%;
 }
