@@ -2,9 +2,13 @@
   box-sizing: border-box; }
 
 body {
+  margin: 0;
   background-color: rgba(114, 98, 52, 0.555);
-  font-family: 'Roboto', sans-serif;
-  margin: 0%; }
+  font-family: sans-serif;
+  color: black;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
 
 nav {
   background-image: linear-gradient(to left, red, black);
@@ -126,3 +130,8 @@ div.desc {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   100% {
     transform: rotate(1800deg); } }
+
+.footer {
+  background-color: red;
+  padding: 1em;
+  text-align: center; }
