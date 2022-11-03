@@ -132,6 +132,6 @@ div.desc {
     transform: rotate(1800deg); } }
 
 .footer {
-  background-color: red;
+  background-image: linear-gradient(to left, red, black);
   padding: 1em;
   text-align: center; }
