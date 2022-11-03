@@ -85,12 +85,16 @@ div.alerta {
   100% {
     opacity: 1; } }
 
-div.gallery:hover {
-  border: 1px solid #e01212; }
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px; }
 
-div.gallery img {
+#galeria img {
   width: 100%;
-  height: center; }
+  height: 250px; }
+
+#galeria img:hover {
+  border: 5px solid rgba(114, 98, 52, 0.555); }
 
 div.desc {
   padding: 15px;
