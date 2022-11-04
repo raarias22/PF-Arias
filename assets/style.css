@@ -36,9 +36,6 @@ button {
   box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
   color: black; }
 
-.principal {
-  text-align: center; }
-
 button:hover {
   background-color: black; }
 
@@ -58,28 +55,6 @@ ul {
 
 ul li {
   float: left; }
-
-h1 {
-  text-align: center;
-  margin: auto;
-  padding: 30px; }
-
-h2 {
-  text-align: center;
-  margin: auto;
-  padding: 30px; }
-
-h3 {
-  text-align: center;
-  margin: auto;
-  padding: 30px; }
-
-.principal-text {
-  text-align: center;
-  margin: auto;
-  font-weight: bolder;
-  width: 100%;
-  padding: 100px; }
 
 #galeria .col-lg-4 {
   margin: 0;
