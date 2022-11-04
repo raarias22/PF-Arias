@@ -1,4 +1,5 @@
 @import "variables";
+@import "footer";
 
 *{
     box-sizing: border-box;
@@ -13,7 +14,15 @@ body{
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  }
+}
+
+.background-image{
+  background-image: url(/assets/7.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 nav {
     background-image: linear-gradient(to left, red, black);
@@ -103,16 +112,8 @@ h1{
     animation-iteration-count: infinite;
   }
   
-  
-  @keyframes aparecer {
-    
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
+
   
 #galeria .col-lg-4 {
   margin: 0 !important;
@@ -148,7 +149,8 @@ width: 100%;
 
 
   .footer{
-    background-image: linear-gradient(to left, red, black);
+    background-image: $gradiente-footer;
     padding: 1em;
     text-align: center;
 }
+
