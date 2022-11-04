@@ -81,13 +81,8 @@ h3 {
   width: 100%;
   padding: 100px; }
 
-div.alerta {
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite; }
-
 #galeria .col-lg-4 {
-  margin: 0 !important;
+  margin: 0;
   padding: 25px; }
 
 #galeria img {
@@ -105,7 +100,7 @@ div.alerta {
   padding: 100px; }
 
 #imagen-principal .row {
-  margin: 0 !important;
+  margin: 0;
   padding: 25px; }
 
 #imagen-principal img {
