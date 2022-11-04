@@ -16,6 +16,13 @@ body{
   grid-template-rows: auto 1fr auto;
 }
 
+.imagen-fondo{
+  background-image: url("/assets/7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 nav {
     background-image: linear-gradient(to left, red, black);
