@@ -65,7 +65,7 @@ ul li {
   height: 250px; }
 
 #galeria img:hover {
-  border: 5px solid rgba(114, 98, 52, 0.555); }
+  border: 5px solid #c91919; }
 
 .contactoform {
   text-align: center;
