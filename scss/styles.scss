@@ -30,6 +30,11 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  
+}
+
+.img-ini{
+  background: url(../assets/imageninicio.jpg) no-repeat; background-size: cover;
 }
 
 .imagen-fondo{
@@ -114,15 +119,13 @@ ul li {
 }  
 
 
-  .footer{
-    background-image: $gradiente-footer;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.footer{
+  background-image: $gradiente-footer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 2em;
+  text-align: center;
 }
 
 .container-bar{

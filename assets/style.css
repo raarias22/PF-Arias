@@ -20,6 +20,10 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto; }
 
+.img-ini {
+  background: url(../assets/imageninicio.jpg) no-repeat;
+  background-size: cover; }
+
 .imagen-fondo {
   background-image: url(../assets/imageninicio.jpg);
   background-repeat: no-repeat;
@@ -87,9 +91,7 @@ ul li {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
   color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: 2em;
   text-align: center; }
 
 .container-bar {
