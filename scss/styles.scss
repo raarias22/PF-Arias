@@ -8,7 +8,7 @@
 }
 
 
-body{
+body {
   margin: 0;
   background-color: $color-fondo;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,7 +18,7 @@ body{
 }
 
 .imagen-fondo{
-  background-image: url(../assets/7.jpg);
+  background-image: url(../assets/imageninicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,22 +26,6 @@ body{
 }
 
 
-
-button{
-    background-color: rgb(185, 41, 41);
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 0, 0);
-    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
-    color: rgb(0, 0, 0);
-
-}
-
-button:hover{
-    background-color:rgb(0, 0, 0)
-}
 
 nav {
   background: $gradiente-footer;
@@ -62,6 +46,7 @@ nav a{
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+
 
 a:link, a:visited, a:active {
   text-decoration:none;
@@ -91,6 +76,7 @@ ul li {
 #galeria img{
   width: 100%;
   height: 250px;
+  border: 2px solid $color-hover2;
 }
 
 #galeria img:hover {
@@ -103,6 +89,7 @@ ul li {
     font-weight: bolder;
     width: 100%;
     padding: 100px;
+    color: black
   }
 
 #imagen-principal .row {
@@ -117,7 +104,9 @@ ul li {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: black;
-    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
 }
 
