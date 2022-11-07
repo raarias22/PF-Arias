@@ -95,7 +95,8 @@ ul li {
   font-weight: 200;
   color: black;
   padding: 2em;
-  text-align: center; }
+  text-align: center;
+  bottom: 0; }
 
 .container-bar {
   width: 100%;
