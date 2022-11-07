@@ -11,10 +11,18 @@
 body{
   margin: 0;
   background-color: $color-fondo;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+}
+
+.imagen-fondo{
+  background-image: url(../assets/7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -47,8 +55,9 @@ nav {
 }
 
 nav a{
-    margin: 30px;
-    padding:15px;
+  display: inline-block;
+    margin: 0.1em;
+    padding:1em;
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -105,6 +114,9 @@ ul li {
 
   .footer{
     background-image: $gradiente-footer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
     padding: 1em;
     text-align: center;
 }
