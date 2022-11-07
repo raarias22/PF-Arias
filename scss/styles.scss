@@ -3,25 +3,18 @@
 
 *{
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 
 
 body{
   margin: 0;
   background-color: $color-fondo;
-  font-family: sans-serif;
-  color: rgb(0, 0, 0);
+  font-family:'Times New Roman', Times, serif;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-}
-
-.imagen-fondo{
-  background-image: url(../assets/7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 
@@ -44,13 +37,17 @@ button:hover{
 
 nav {
   background: $gradiente-footer;
-  padding: 0.5em;
-  text-align: center;
-  margin: auto;
+  position:static;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
     
 }
 
 nav a{
+    margin: 30px;
     padding:15px;
     text-decoration: none;
     font-weight: bold;
