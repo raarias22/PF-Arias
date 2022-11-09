@@ -44,7 +44,13 @@ body {
   background-attachment: fixed;
 }
 
-
+.imagen-info{
+	background-image: url(../assets/fondocontacto2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
 
 nav {
   background: $gradiente-footer;

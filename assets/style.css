@@ -34,6 +34,12 @@ body {
   background-position: center;
   background-attachment: fixed; }
 
+.imagen-info {
+  background-image: url(../assets/fondocontacto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 nav {
   background: linear-gradient(to left, red, black);
   position: static;
