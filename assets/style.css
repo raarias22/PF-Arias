@@ -40,6 +40,12 @@ body {
   background-size: cover;
   background-position: center; }
 
+.fondogaleria {
+  background-image: url(../assets/fondogaleria3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 nav {
   background: linear-gradient(to left, red, black);
   position: static;
