@@ -10,18 +10,20 @@ h4 {
   color: #00acee; }
 
 h1 {
-  color: #00acee; }
+  color: #740a0a; }
 
 .text-center {
   color: #e52a23; }
 
 body {
   margin: 0;
-  background-color: black;
+  background: black;
+  background: linear-gradient(135deg, black 23%, rgba(35, 101, 128, 0.575) 100%);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
   min-height: 100vh;
-  grid-template-rows: auto 1fr auto; }
+  grid-template-rows: auto 1fr auto;
+  z-index: 40; }
 
 .img-ini {
   background: url(../assets/imageninicio.jpg) no-repeat;
@@ -47,7 +49,7 @@ body {
   background-position: center; }
 
 nav {
-  background: linear-gradient(to left, red, black);
+  background: linear-gradient(to right, black, rgba(35, 101, 128, 0.575));
   position: static;
   top: 0;
   width: 100%;
@@ -63,7 +65,9 @@ nav a {
   font-weight: bold;
   color: white; }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
   text-decoration: none; }
 
 nav a:hover {
@@ -102,7 +106,7 @@ ul li {
   width: 100%; }
 
 .footer {
-  background-image: linear-gradient(to left, red, black);
+  background-image: linear-gradient(to right, black, rgba(35, 101, 128, 0.575));
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 200;
   color: black;
@@ -111,11 +115,12 @@ ul li {
   bottom: 0; }
 
 .container-bar {
-  width: 100%;
-  max-width: 50px;
+  width: 50%;
+  max-width: 25px;
   position: fixed;
   left: 0;
-  top: 25%; }
+  top: 25%;
+  z-index: 30; }
 
 .container-bar a {
   display: block;
@@ -173,10 +178,10 @@ ul li {
 .container-bar #title:after {
   position: absolute;
   content: '';
-  border-left: 7px solid transparent;
+  border-left: 7px solid #1c1c1c;
   border-right: 6px solid #1c1c1c;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
+  border-top: 7px solid #1c1c1c;
+  border-bottom: 7px solid #1c1c1c;
   right: 100%;
   top: 8px; }
 
@@ -204,170 +209,72 @@ ul li {
   transform: translateX(-100%);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0); }
 
-.animation-container {
-  display: block;
+.fond {
   position: relative;
-  width: 800px;
-  max-width: 100%;
-  margin: 0 auto; }
-  .animation-container .lightning-container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: flex;
-    transform: translateY(-50%); }
-    .animation-container .lightning-container .lightning {
-      position: absolute;
-      display: block;
-      height: 12px;
-      width: 12px;
-      border-radius: 12px;
-      transform-origin: 6px 6px;
-      animation-name: woosh;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-      animation-direction: alternate; }
-      .animation-container .lightning-container .lightning.white {
-        background-color: white;
-        box-shadow: 0px 50px 50px 0px rgba(255, 255, 255, 0.3); }
-      .animation-container .lightning-container .lightning.red {
-        background-color: #fc7171;
-        box-shadow: 0px 50px 50px 0px rgba(252, 113, 113, 0.3);
-        animation-delay: 0.2s; }
-  .animation-container .boom-container {
-    position: absolute;
-    display: flex;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    align-items: center;
-    transform: translateY(-50%);
-    left: 200px;
-    top: -145px; }
-    .animation-container .boom-container .shape {
-      display: inline-block;
-      position: relative;
-      opacity: 0;
-      transform-origin: center center; }
-      .animation-container .boom-container .shape.triangle {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        transform-origin: 50% 80%;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: infinite;
-        margin-left: -15px;
-        border-width: 0 2.5px 5px 2.5px;
-        border-color: transparent transparent #42e599 transparent;
-        animation-name: boom-triangle; }
-        .animation-container .boom-container .shape.triangle.big {
-          margin-left: -25px;
-          border-width: 0 5px 10px 5px;
-          border-color: transparent transparent #fade28 transparent;
-          animation-name: boom-triangle-big; }
-      .animation-container .boom-container .shape.disc {
-        width: 8px;
-        height: 8px;
-        border-radius: 100%;
-        background-color: #d15ff4;
-        animation-name: boom-disc;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: infinite; }
-      .animation-container .boom-container .shape.circle {
-        width: 20px;
-        height: 20px;
-        animation-name: boom-circle;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: infinite;
-        border-radius: 100%;
-        margin-left: -30px; }
-        .animation-container .boom-container .shape.circle.white {
-          border: 1px solid white; }
-        .animation-container .boom-container .shape.circle.big {
-          width: 40px;
-          height: 40px;
-          margin-left: 0px; }
-          .animation-container .boom-container .shape.circle.big.white {
-            border: 2px solid white; }
-      .animation-container .boom-container .shape:after {
-        background-color: rgba(178, 215, 232, 0.2); }
-    .animation-container .boom-container .shape.triangle, .animation-container .boom-container .shape.circle, .animation-container .boom-container .shape.circle.big, .animation-container .boom-container .shape.disc {
-      animation-delay: .38s;
-      animation-duration: 3s; }
-    .animation-container .boom-container .shape.circle {
-      animation-delay: 0.6s; }
-    .animation-container .boom-container.second {
-      left: 485px;
-      top: 155px; }
-      .animation-container .boom-container.second .shape.triangle, .animation-container .boom-container.second .shape.circle, .animation-container .boom-container.second .shape.circle.big, .animation-container .boom-container.second .shape.disc {
-        animation-delay: 1.9s; }
-      .animation-container .boom-container.second .shape.circle {
-        animation-delay: 2.15s; }
+  padding-top: 85px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
-@keyframes woosh {
-  0% {
-    width: 12px;
-    transform: translate(0px, 0px) rotate(-35deg); }
-  15% {
-    width: 50px; }
-  30% {
-    width: 12px;
-    transform: translate(214px, -150px) rotate(-35deg); }
-  30.1% {
-    transform: translate(214px, -150px) rotate(46deg); }
-  50% {
-    width: 110px; }
-  70% {
-    width: 12px;
-    transform: translate(500px, 150px) rotate(46deg); }
-  70.1% {
-    transform: translate(500px, 150px) rotate(-37deg); }
-  85% {
-    width: 50px; }
-  100% {
-    width: 12px;
-    transform: translate(700px, 0) rotate(-37deg); } }
+.carreaux_presentation_light {
+  display: table-cell;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
 
-@keyframes boom-circle {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  30% {
-    opacity: 0;
-    transform: scale(3); }
-  100% { } }
+.carreaux_presentation_light .shadow_swhow_mini {
+  background-color: rgba(19, 30, 33, 0.4);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
-@keyframes boom-triangle-big {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  40% {
-    opacity: 0;
-    transform: scale(2.5) translate(50px, -50px) rotate(360deg); }
-  100% { } }
+.carreaux_presentation_light:hover .shadow_swhow_mini {
+  background-color: rgba(16, 23, 41, 0); }
 
-@keyframes boom-triangle {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  30% {
-    opacity: 0;
-    transform: scale(3) translate(20px, 40px) rotate(360deg); }
-  100% { } }
+.carreaux_presentation_light .deroul_titre {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  padding: 7px;
+  z-index: 1000;
+  top: 60%;
+  left: -80%;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 13px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s; }
 
-@keyframes boom-disc {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  40% {
-    opacity: 0;
-    transform: scale(2) translate(-70px, -30px); }
-  100% { } }
+.carreaux_presentation_light:hover .deroul_titre {
+  background-color: #1e4944;
+  left: 0px; }
+
+.carreaux_presentation_light .deroul_soustitre {
+  position: absolute;
+  font-family: 'Roboto';
+  padding: 5px;
+  z-index: 1000;
+  top: 60%;
+  right: -85%;
+  margin-top: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 11px;
+  width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s; }
+
+.carreaux_presentation_light:hover .deroul_soustitre {
+  background-color: #417c74;
+  right: 0px; }
