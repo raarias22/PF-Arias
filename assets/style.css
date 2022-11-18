@@ -3,18 +3,6 @@
   padding: 0%;
   margin: 0%; }
 
-h3 {
-  color: #00acee; }
-
-h4 {
-  color: #00acee; }
-
-h1 {
-  color: #740a0a; }
-
-.text-center {
-  color: #e52a23; }
-
 body {
   margin: 0;
   background: black;
@@ -113,6 +101,9 @@ ul li {
   padding: 2em;
   text-align: center;
   bottom: 0; }
+
+.list-group :hover {
+  background: rgba(35, 101, 128, 0.575); }
 
 .container-bar {
   width: 100%;
@@ -278,3 +269,33 @@ ul li {
 .carreaux_presentation_light:hover .deroul_soustitre {
   background-color: #417c74;
   right: 0px; }
+
+.card {
+  background: black;
+  background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }
+
+.card2 {
+  background: black;
+  background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }
+
+.card3 {
+  background: black;
+  background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }

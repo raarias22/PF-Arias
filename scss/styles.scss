@@ -7,21 +7,6 @@
 	margin: 0%;
 }
 
-h3 {
-	color: #00acee;
-}
-
-h4 {
-	color: #00acee;
-}
-
-h1 {
-	color: #740a0a;
-}
-
-.text-center {
-	color: #e52a23;
-}
 
 body {
 	margin: 0;
@@ -147,7 +132,11 @@ ul li {
 	bottom: 0;
 }
 
-
+.list-group :hover{
+	
+	background:rgba(35, 101, 128, 0.575);
+	
+}
 
 .container-bar {
 	width: 100%;
@@ -342,3 +331,35 @@ ul li {
 	right: 0px;
 }
 
+.card{
+	background: rgb(0, 0, 0);
+	background: linear-gradient(135deg, rgb(95, 91, 29) 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px;
+}
+
+.card2{
+	background: rgb(0, 0, 0);
+	background: linear-gradient(135deg, rgb(60, 29, 95) 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px;
+}
+
+.card3{
+	background: rgb(0, 0, 0);
+	background: linear-gradient(135deg, rgb(29, 95, 54) 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px;
+}
