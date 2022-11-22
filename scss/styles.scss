@@ -9,7 +9,6 @@
 
 
 body {
-	margin: 0;
 	background: rgb(0, 0, 0);
 	background: linear-gradient(135deg, rgb(0, 0, 0) 23%, rgba(35, 101, 128, 0.575) 100%);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -17,6 +16,7 @@ body {
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	z-index: 40;
+
 
 	nav {
 		background: $gradiente-footer;
@@ -30,10 +30,7 @@ body {
 		color: white;
 		padding: 15px;
 
-		.logoiz {
-			float: left;
-			padding-right: 50px;
-		}
+
 
 		a {
 			display: inline-block;
@@ -41,6 +38,7 @@ body {
 			padding: 1em;
 			font-weight: bold;
 			color: rgb(255, 255, 255);
+			background-color: #237ec8;
 			border: 1px solid rgba(35, 101, 128, 0.575);
 			border-radius: 5%;
 		}
@@ -54,7 +52,7 @@ body {
 	}
 
 	a:hover {
-		background-color: rgba(35, 101, 128, 0.575);
+		background-color: rgba(116, 116, 116, 0.575);
 		color: rgb(255, 255, 255);
 		border: 2px;
 	}
