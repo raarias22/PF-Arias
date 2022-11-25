@@ -1,11 +1,11 @@
 @import "variables";
 @import "footer";
-
+@import "mixins";
 * {
 	padding: 0%;
 	margin: 0%;
 	box-sizing: border-box;
-	
+
 }
 
 
@@ -14,68 +14,94 @@
 body {
 	background: linear-gradient(135deg, rgb(0, 0, 0) 23%, rgba(35, 101, 128, 0.575)100%);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	display:grid;
+	display: grid;
 	min-height: 100vh;
 	width: 100%;
 	grid-template-rows: auto 1fr auto;
 	z-index: 40;
 	border-style: double;
 	border: 1.5px;
-	
-
-.main{
-	position: relative;
-	background: url(../assets/imageninicio.jpg);
-	min-height: 100%;
-	background-size: cover;
-	background-position: center;
-	padding: 220px;
-	border: 1px;
-	border-style: double;
-}
-
-.main h2{
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	margin: 0;
-	padding: 0;
-	font-size: 2.6em;
-	color: #ffffff;
-	text-transform: uppercase;
-	font-weight: lighter;
-
-}
-
-.main p{
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin-top: 1em;
-	padding: 0;
-	font-size: 1em;
-	color: #ffffff;
-	font-weight:lighter;
-}
-
-.main .btn{
-	background: black;
-	color: white;
-	border-radius: 0;
-	padding-left: 25px;
-	padding-right: 25px;
-}
 
 
-@media(max-width: 768px){
-	.main{
-		padding:200px 0;
+	.main {
+		position: relative;
+		background: url(../assets/imageninicio.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		padding: 220px;
+		border: 1px;
+		border-style: double;
+
+		.mask-custom {
+			backdrop-filter: blur(1px);
+			background-color: rgba(35, 101, 128, 0.575);
+			border: 1.5px inset rgb(255, 255, 255);
+
+		}
+	}
+
+	.main h2 {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		margin: 0;
+		padding: 0;
+		font-size: 2.6em;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-weight: lighter;
 
 	}
 
-	.main h2{
-		font-size: 2em;
+	.main p {
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		margin-top: 1em;
+		padding: 0;
+		font-size: 1em;
+		color: #ffffff;
+		font-weight: lighter;
 	}
 
-	
-}
+	.main .btn {
+		background: black;
+		color: white;
+		border-radius: 5px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 
+
+	@media(max-width: 768px) {
+		.main {
+			padding: 200px 0;
+
+		}
+
+		.main h2 {
+			font-size: 2em;
+		}
+
+
+	}
+
+	.main2 {
+		position: relative;
+		background: url(../assets/fondocontacto2.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		padding: 220px;
+		border: 1px;
+		border-style: double;
+
+		.mask-custom {
+			backdrop-filter: blur(1px);
+			background-color: rgba(19, 59, 26, 0.575);
+			height: auto;
+			min-height: 50vh;
+			border: 1.5px inset rgb(255, 255, 255);
+
+		}
+	}
 
 
 	nav {
@@ -83,12 +109,12 @@ body {
 		position: static;
 		top: 0;
 		width: 100%;
-		display:flex;
+		display: flex;
 		justify-content: center;
 		flex-wrap: nowrap;
 		border-style: double;
 		border: 1.5px;
-		
+
 		padding: 15px;
 
 
@@ -97,7 +123,7 @@ body {
 			display: inline-block;
 			margin: 5px;
 			padding: 5px;
-			font-weight:lighter;
+			font-weight: lighter;
 			background-color: rgba(35, 101, 128, 0.575);
 			border: 1.5px inset rgb(255, 255, 255);
 			border-radius: 15%;
@@ -130,18 +156,11 @@ body {
 	}
 }
 
-.card-1{
-	background: black;
-	background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px; 
+.card-1 {
+@include cards();
 }
 
-.card-2{
+.card-2 {
 	background: black;
 	background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
 	text-align: center;
@@ -149,10 +168,10 @@ body {
 	border-right: 1px solid #000000;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 }
 
-.card-3{
+.card-3 {
 	background: black;
 	background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
 	text-align: center;
@@ -160,7 +179,7 @@ body {
 	border-right: 1px solid #000000;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 }
 
 
@@ -172,28 +191,7 @@ body {
 
 }
 
-.fondogaleria {
-	background-image: url(../assets/fondogaleria3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 
-	#galeria .col-lg-4 {
-		margin: 0;
-		padding: 25px;
-	}
-
-	#galeria img {
-		width: 100%;
-		height: 250px;
-		border: 2px solid $color-hover2;
-	}
-
-	#galeria img:hover {
-		border: 5px solid $color-hover2;
-	}
-
-}
 
 
 .contactoform {
@@ -212,11 +210,6 @@ body {
 }
 
 
-.list-group :hover {
-
-	background: rgba(35, 101, 128, 0.575);
-
-}
 
 .container-bar {
 	width: 100%;
@@ -425,9 +418,11 @@ body {
 	a:link {
 		text-decoration: none;
 	}
+
 	a:visited {
 		text-decoration: none;
 	}
+
 	a:active {
 		text-decoration: none;
 

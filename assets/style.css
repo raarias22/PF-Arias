@@ -16,12 +16,16 @@ body {
   body .main {
     position: relative;
     background: url(../assets/imageninicio.jpg);
-    min-height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 220px;
     border: 1px;
     border-style: double; }
+    body .main .mask-custom {
+      backdrop-filter: blur(1px);
+      background-color: rgba(35, 101, 128, 0.575);
+      border: 1.5px inset white; }
   body .main h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -40,7 +44,7 @@ body {
   body .main .btn {
     background: black;
     color: white;
-    border-radius: 0;
+    border-radius: 5px;
     padding-left: 25px;
     padding-right: 25px; }
   @media (max-width: 768px) {
@@ -48,6 +52,21 @@ body {
       padding: 200px 0; }
     body .main h2 {
       font-size: 2em; } }
+  body .main2 {
+    position: relative;
+    background: url(../assets/fondocontacto2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 220px;
+    border: 1px;
+    border-style: double; }
+    body .main2 .mask-custom {
+      backdrop-filter: blur(1px);
+      background-color: rgba(19, 59, 26, 0.575);
+      height: auto;
+      min-height: 50vh;
+      border: 1.5px inset white; }
   body nav {
     background: linear-gradient(to left, black, rgba(35, 101, 128, 0.575));
     position: static;
@@ -89,7 +108,7 @@ body {
   border-right: 1px solid #000000;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
-  padding-bottom: 15px; }
+  padding-bottom: 5px; }
 
 .card-2 {
   background: black;
@@ -117,21 +136,6 @@ body {
   background-size: cover;
   background-position: center; }
 
-.fondogaleria {
-  background-image: url(../assets/fondogaleria3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-  .fondogaleria #galeria .col-lg-4 {
-    margin: 0;
-    padding: 25px; }
-  .fondogaleria #galeria img {
-    width: 100%;
-    height: 250px;
-    border: 2px solid #060b4e; }
-  .fondogaleria #galeria img:hover {
-    border: 5px solid #060b4e; }
-
 .contactoform {
   text-align: center;
   margin: auto;
@@ -144,9 +148,6 @@ body {
   margin: 0;
   padding: 25px;
   width: 100%; }
-
-.list-group :hover {
-  background: rgba(35, 101, 128, 0.575); }
 
 .container-bar {
   width: 100%;
