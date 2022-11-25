@@ -151,6 +151,7 @@ body {
 		left: 0;
 		right: 0;
 		bottom: 0;
+		
 
 		.carreaux_presentation_light {
 			display: table-cell;
@@ -159,16 +160,18 @@ body {
 			background-size: cover;
 			overflow: hidden;
 			position: relative;
+			
 		}
 
 		.carreaux_presentation_light .shadow_swhow_mini {
 			background-color: rgba(19, 30, 33, 0.4);
 			position: absolute;
-			z-index: 1000;
+			z-index: 50;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
+			
 
 		}
 

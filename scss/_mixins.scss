@@ -31,7 +31,7 @@
         font-weight: lighter;
         background-color: rgba(35, 101, 128, 0.575);
         border: 1.5px inset rgb(255, 255, 255);
-        border-radius: 15%;
+        border-radius: 0%;
     }
 
     a:link,
@@ -44,7 +44,7 @@
 
 a:hover {
     background-color: rgba(26, 59, 71, 0.575);
-    border-radius: 20%;
+    border-radius: 10%;
     border: 1.5 solid black;
 }
 

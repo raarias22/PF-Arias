@@ -1,6 +1,6 @@
 a:hover {
   background-color: rgba(26, 59, 71, 0.575);
-  border-radius: 20%;
+  border-radius: 10%;
   border: 1.5 solid black; }
 
 ul {
@@ -106,7 +106,7 @@ body {
       font-weight: lighter;
       background-color: rgba(35, 101, 128, 0.575);
       border: 1.5px inset white;
-      border-radius: 15%; }
+      border-radius: 0%; }
     body nav a:link,
     body nav a:visited,
     body nav a:active {
@@ -236,7 +236,7 @@ body {
     body .fond .carreaux_presentation_light .shadow_swhow_mini {
       background-color: rgba(19, 30, 33, 0.4);
       position: absolute;
-      z-index: 1000;
+      z-index: 50;
       top: 0;
       left: 0;
       right: 0;
