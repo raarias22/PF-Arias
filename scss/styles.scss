@@ -36,6 +36,7 @@ body {
 		border-style: double;
 
 		.mask-custom {
+			position: static;
 			backdrop-filter: blur(1px);
 			background-color: rgba(35, 101, 128, 0.575);
 			border: 1.5px inset rgb(255, 255, 255);
