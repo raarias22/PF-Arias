@@ -1,7 +1,8 @@
 a:hover {
-  background-color: rgba(26, 59, 71, 0.575);
+  background-color: rgba(68, 110, 126, 0.575);
   border-radius: 10%;
-  border: 1.5 solid black; }
+  border: 1.5 solid black;
+  color: white; }
 
 ul {
   list-style: none;
@@ -104,10 +105,11 @@ body {
       display: inline-block;
       margin: 5px;
       padding: 5px;
-      font-weight: lighter;
-      background-color: rgba(35, 101, 128, 0.575);
-      border: 1.5px inset white;
-      border-radius: 0%; }
+      background-color: rgba(255, 255, 255, 0.952);
+      border: 1px inset black;
+      border-radius: 0%;
+      border-color: #000000;
+      color: black; }
     body nav a:link,
     body nav a:visited,
     body nav a:active {
