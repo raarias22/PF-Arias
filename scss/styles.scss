@@ -103,7 +103,7 @@ body {
 			backdrop-filter: blur(1px);
 			background-color: rgba(19, 59, 26, 0.575);
 			height: auto;
-			min-height: 35vh;
+			min-height: 15vh;
 			padding: auto;
 			border: 1.5px inset rgb(255, 255, 255);
 		}
@@ -137,34 +137,6 @@ body {
 		@include cards();
 		background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
 	}
-
-
-	.imagen-info {
-		background-image: url(../assets/fondocontacto2.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-
-	}
-
-
-
-
-	.contactoform {
-		text-align: center;
-		margin: auto;
-		font-weight: bolder;
-		width: 100%;
-		padding: 100px;
-		color: black
-	}
-
-	#imagen-principal .row {
-		margin: 0;
-		padding: 25px;
-		width: 100%;
-	}
-
 
 
 	.container-bar {
@@ -251,6 +223,19 @@ body {
 			background-color: #417c74;
 			right: 0px;
 		}
+	}
+
+	.abs-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+		color: white;
+
+	}
+
+	.form {
+		width: 450px;
 	}
 
 	.footer {
