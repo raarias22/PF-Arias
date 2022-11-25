@@ -1,6 +1,8 @@
 @import "variables";
 @import "footer";
 @import "mixins";
+@import "redes";
+
 * {
 	padding: 0%;
 	margin: 0%;
@@ -18,7 +20,7 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	grid-template-rows: auto 1fr auto;
-	z-index: 40;
+	z-index: 1000;
 	border-style: double;
 	border: 1.5px;
 
@@ -89,342 +91,169 @@ body {
 		height: 100vh;
 		background-size: cover;
 		background-position: center;
-		padding: 220px;
+		padding: auto;
 		border: 1px;
 		border-style: double;
+		text-align: center;
+		padding: 25px;
 
-		.mask-custom {
+
+		.mask-custom-2 {
+			position: relative;
 			backdrop-filter: blur(1px);
 			background-color: rgba(19, 59, 26, 0.575);
 			height: auto;
-			min-height: 50vh;
+			min-height: 35vh;
+			padding: auto;
 			border: 1.5px inset rgb(255, 255, 255);
-
 		}
 	}
 
+	@media(max-width: 768px) {
+		.main {
+			padding: 200px 0;
+
+		}
+
+		.main h2 {
+			font-size: 1em;
+		}
+	}
 
 	nav {
-		background: $gradiente-footer;
-		position: static;
-		top: 0;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		flex-wrap: nowrap;
-		border-style: double;
-		border: 1.5px;
-
-		padding: 15px;
-
-
-
-		a {
-			display: inline-block;
-			margin: 5px;
-			padding: 5px;
-			font-weight: lighter;
-			background-color: rgba(35, 101, 128, 0.575);
-			border: 1.5px inset rgb(255, 255, 255);
-			border-radius: 15%;
-		}
-
-		a:link,
-		a:visited,
-		a:active {
-			text-decoration: none;
-
-		}
+		@include nav();
 	}
 
-	a:hover {
-		background-color: rgba(26, 59, 71, 0.575);
-		border-radius: 20%;
-		border: 1.5 solid black;
+	.card-1 {
+		@include cards();
+	}
+
+	.card-2 {
+		@include cards();
+		background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%)
+	}
+
+	.card-3 {
+		@include cards();
+		background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
 	}
 
 
-
-	ul {
-
-		list-style: none;
-		display: inline-block;
-	}
-
-	ul li {
-		float: left;
-	}
-}
-
-.card-1 {
-@include cards();
-}
-
-.card-2 {
-	background: black;
-	background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px;
-}
-
-.card-3 {
-	background: black;
-	background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px;
-}
-
-
-.imagen-info {
-	background-image: url(../assets/fondocontacto2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-}
-
-
-
-
-.contactoform {
-	text-align: center;
-	margin: auto;
-	font-weight: bolder;
-	width: 100%;
-	padding: 100px;
-	color: black
-}
-
-#imagen-principal .row {
-	margin: 0;
-	padding: 25px;
-	width: 100%;
-}
-
-
-
-.container-bar {
-	width: 100%;
-	max-width: 50px;
-	position: fixed;
-	left: 0;
-	top: 25%;
-	z-index: 30;
-
-	a {
-		display: block;
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-		text-decoration: none;
-		font-size: 18px;
-		position: relative;
-		transition: all 500ms ease;
-		color: #fff;
-	}
-
-	a:hover {
-		background: #1c1c1c;
-	}
-
-	.fa-facebook {
-		background: #3b5998;
-		border-radius: 0px 5px 0px 0px;
-	}
-
-	.fa-youtube {
-		background: #e52a23;
-	}
-
-	.fa-twitter {
-		background: #00acee;
-	}
-
-	.fa-github {
-		background: #747473;
-	}
-
-	.fa-pinterest {
-		background: #c8232c;
-		border-radius: 0px 0px 5px 0px;
-	}
-
-	#title {
-		position: absolute;
-		background: #1c1c1c;
-		padding: 0px 8px;
-		height: 30px;
-		line-height: 30px;
-		text-align: center;
-		border-radius: 3px;
-		font-size: 15px;
-		top: 12px;
-		left: 0px;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-		z-index: -1;
-	}
-
-	a:hover #title {
-		opacity: 1;
-		visibility: visible;
-		left: 64px;
-	}
-
-	#title:after {
-		position: absolute;
-		content: '';
-		border-left: 7px solid #1c1c1c;
-		border-right: 6px solid #1c1c1c;
-		border-top: 7px solid #1c1c1c;
-		border-bottom: 7px solid #1c1c1c;
-		right: 100%;
-		top: 8px;
-	}
-
-	.fa-play {
-		cursor: pointer;
-		transition: all 0.4s;
-		font-size: 12px;
-		margin-bottom: 5px;
-		display: inline-block;
-		transform: rotate(180deg);
-		color: #49b0e6;
-	}
-
-	#btn-social {
-		display: none;
-	}
-
-	:checked~.fa-play {
-		transform: rotate(0deg);
-	}
-
-	.icon-social {
-		transition: all 0.4s;
-		transform: translateX(0%);
-		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-	}
-
-	:checked~.icon-social {
-		transform: translateX(-100%);
-		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.0);
-	}
-}
-
-
-.fond {
-	position: relative;
-	padding-top: 85px;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-
-	.carreaux_presentation_light {
-		display: table-cell;
-		width: 250px;
-		height: 250px;
+	.imagen-info {
+		background-image: url(../assets/fondocontacto2.jpg);
+		background-repeat: no-repeat;
 		background-size: cover;
-		overflow: hidden;
-		position: relative;
+		background-position: center;
+
 	}
 
-	.carreaux_presentation_light .shadow_swhow_mini {
-		background-color: rgba(19, 30, 33, 0.4);
-		position: absolute;
-		z-index: 1000;
+
+
+
+	.contactoform {
+		text-align: center;
+		margin: auto;
+		font-weight: bolder;
+		width: 100%;
+		padding: 100px;
+		color: black
+	}
+
+	#imagen-principal .row {
+		margin: 0;
+		padding: 25px;
+		width: 100%;
+	}
+
+
+
+	.container-bar {
+		@include redes();
+	}
+
+
+	.fond {
+		position: center;
+		padding-top: 85px;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 
+		.carreaux_presentation_light {
+			display: table-cell;
+			width: 250px;
+			height: 250px;
+			background-size: cover;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.carreaux_presentation_light .shadow_swhow_mini {
+			background-color: rgba(19, 30, 33, 0.4);
+			position: absolute;
+			z-index: 1000;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+		}
+
+		.carreaux_presentation_light:hover .shadow_swhow_mini {
+			background-color: rgba(16, 23, 41, 0);
+		}
+
+		.carreaux_presentation_light .deroul_titre {
+			position: absolute;
+			text-transform: uppercase;
+			font-family: 'Roboto';
+			padding: 7px;
+			z-index: 50;
+			top: 60%;
+			left: -80%;
+			color: #ffffff;
+			font-weight: 300;
+			font-size: 13px;
+			width: 80%;
+			-webkit-transition: all 0.7s;
+			-moz-transition: all 0.7s;
+			-ms-transition: all 0.7s;
+			transition: all 0.7s;
+
+		}
+
+		.carreaux_presentation_light:hover .deroul_titre {
+			background-color: #1e4944;
+			left: 0px;
+
+		}
+
+		.carreaux_presentation_light .deroul_soustitre {
+			position: absolute;
+			font-family: 'Roboto';
+			padding: 5px;
+			z-index: 50;
+			top: 60%;
+			right: -85%;
+			margin-top: 25px;
+			color: #ffffff;
+			font-weight: 300;
+			font-size: 11px;
+			width: 80%;
+			-webkit-transition: all 0.7s;
+			-moz-transition: all 0.7s;
+			-ms-transition: all 0.7s;
+			transition: all 0.7s;
+		}
+
+		.carreaux_presentation_light:hover .deroul_soustitre {
+			background-color: #417c74;
+			right: 0px;
+		}
 	}
 
-	.carreaux_presentation_light:hover .shadow_swhow_mini {
-		background-color: rgba(16, 23, 41, 0);
-	}
-
-	.carreaux_presentation_light .deroul_titre {
-		position: absolute;
-		text-transform: uppercase;
-		font-family: 'Roboto';
-		padding: 7px;
-		z-index: 1000;
-		top: 60%;
-		left: -80%;
-		color: #ffffff;
-		font-weight: 300;
-		font-size: 13px;
-		width: 80%;
-		-webkit-transition: all 0.7s;
-		-moz-transition: all 0.7s;
-		-ms-transition: all 0.7s;
-		transition: all 0.7s;
-
-	}
-
-	.carreaux_presentation_light:hover .deroul_titre {
-		background-color: #1e4944;
-		left: 0px;
-
-	}
-
-	.carreaux_presentation_light .deroul_soustitre {
-		position: absolute;
-		font-family: 'Roboto';
-		padding: 5px;
-		z-index: 1000;
-		top: 60%;
-		right: -85%;
-		margin-top: 25px;
-		color: #ffffff;
-		font-weight: 300;
-		font-size: 11px;
-		width: 80%;
-		-webkit-transition: all 0.7s;
-		-moz-transition: all 0.7s;
-		-ms-transition: all 0.7s;
-		transition: all 0.7s;
-	}
-
-	.carreaux_presentation_light:hover .deroul_soustitre {
-		background-color: #417c74;
-		right: 0px;
-	}
-}
-
-.footer {
-	background: $gradiente-footer;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-weight: 200;
-	color: black;
-	padding: 2em;
-	text-align: center;
-	bottom: 0;
-	border: 1px;
-	border-style: double;
-
-	a:link {
-		text-decoration: none;
-	}
-
-	a:visited {
-		text-decoration: none;
-	}
-
-	a:active {
-		text-decoration: none;
-
+	.footer {
+		@include footer;
 	}
 }

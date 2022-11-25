@@ -1,10 +1,86 @@
-@mixin cards(){
-	background: black;
-	background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 5px;
+@mixin cards() {
+    background: black;
+    background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
+    text-align: center;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
 }
+
+@mixin nav() {
+    background: $gradiente-footer;
+    position: static;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-style: double;
+    border: 1.5px;
+
+    padding: 15px;
+
+
+
+    a {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        font-weight: lighter;
+        background-color: rgba(35, 101, 128, 0.575);
+        border: 1.5px inset rgb(255, 255, 255);
+        border-radius: 15%;
+    }
+
+    a:link,
+    a:visited,
+    a:active {
+        text-decoration: none;
+
+    }
+}
+
+a:hover {
+    background-color: rgba(26, 59, 71, 0.575);
+    border-radius: 20%;
+    border: 1.5 solid black;
+}
+
+
+
+ul {
+
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    float: left;
+}
+
+@mixin footer(){
+		background: $gradiente-footer;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-weight: 200;
+		color: black;
+		padding: 2em;
+		text-align: center;
+		bottom: 0;
+		border: 1px;
+		border-style: double;
+
+		a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+			text-decoration: none;
+		}
+
+		a:active {
+			text-decoration: none;
+
+		}
+	}
