@@ -7,16 +7,21 @@ body {
   background: linear-gradient(135deg, black 23%, rgba(35, 101, 128, 0.575) 100%);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
-  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
   grid-template-rows: auto 1fr auto;
-  z-index: 40; }
+  z-index: 40;
+  border-style: double;
+  border: 1.5px; }
   body .main {
     position: relative;
-    background: url(../assets/1.jpg);
+    background: url(../assets/imageninicio.jpg);
     min-height: 100%;
     background-size: cover;
     background-position: center;
-    padding: 220px; }
+    padding: 220px;
+    border: 1px;
+    border-style: double; }
   body .main h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -36,8 +41,8 @@ body {
     background: black;
     color: white;
     border-radius: 0;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 25px;
+    padding-right: 25px; }
   @media (max-width: 768px) {
     body .main {
       padding: 200px 0; }
@@ -51,36 +56,60 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    border: 1px;
-    color: white;
+    border-style: double;
+    border: 1.5px;
     padding: 15px; }
     body nav a {
       display: inline-block;
-      margin: 0.1em;
-      padding: 1em;
+      margin: 5px;
+      padding: 5px;
       font-weight: lighter;
       background-color: rgba(35, 101, 128, 0.575);
-      border: 1.5px solid rgba(0, 0, 0, 0.575);
-      border-radius: 5%; }
+      border: 1.5px inset white;
+      border-radius: 15%; }
     body nav a:link,
     body nav a:visited,
     body nav a:active {
       text-decoration: none; }
   body a:hover {
     background-color: rgba(26, 59, 71, 0.575);
-    border: 2px; }
+    border-radius: 20%;
+    border: 1.5 solid black; }
   body ul {
     list-style: none;
     display: inline-block; }
   body ul li {
     float: left; }
 
-.imagen-fondo {
-  background-image: url(../assets/imageninicio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+.card-1 {
+  background: black;
+  background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }
+
+.card-2 {
+  background: black;
+  background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }
+
+.card-3 {
+  background: black;
+  background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
+  text-align: center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 15px; }
 
 .imagen-info {
   background-image: url(../assets/fondocontacto2.jpg);
@@ -115,19 +144,6 @@ body {
   margin: 0;
   padding: 25px;
   width: 100%; }
-
-.footer {
-  background-image: linear-gradient(to left, black, rgba(35, 101, 128, 0.575));
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 200;
-  color: black;
-  padding: 2em;
-  text-align: center;
-  bottom: 0; }
-  .footer a:link,
-  .footer a:visited,
-  .footer a:active {
-    text-decoration: none; }
 
 .list-group :hover {
   background: rgba(35, 101, 128, 0.575); }
@@ -275,32 +291,19 @@ body {
     background-color: #417c74;
     right: 0px; }
 
-.card {
-  background: black;
-  background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
+.footer {
+  background: linear-gradient(to left, black, rgba(35, 101, 128, 0.575));
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 200;
+  color: black;
+  padding: 2em;
   text-align: center;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 15px; }
-
-.card2 {
-  background: black;
-  background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
-  text-align: center;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 15px; }
-
-.card3 {
-  background: black;
-  background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
-  text-align: center;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 15px; }
+  bottom: 0;
+  border: 1px;
+  border-style: double; }
+  .footer a:link {
+    text-decoration: none; }
+  .footer a:visited {
+    text-decoration: none; }
+  .footer a:active {
+    text-decoration: none; }

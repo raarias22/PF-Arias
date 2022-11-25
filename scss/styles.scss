@@ -5,26 +5,33 @@
 	padding: 0%;
 	margin: 0%;
 	box-sizing: border-box;
+	
 }
+
+
 
 
 body {
 	background: linear-gradient(135deg, rgb(0, 0, 0) 23%, rgba(35, 101, 128, 0.575)100%);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	display:grid;
-	min-height: 100%;
+	min-height: 100vh;
+	width: 100%;
 	grid-template-rows: auto 1fr auto;
 	z-index: 40;
-	
+	border-style: double;
+	border: 1.5px;
 	
 
 .main{
 	position: relative;
-	background: url(../assets/1.jpg);
+	background: url(../assets/imageninicio.jpg);
 	min-height: 100%;
 	background-size: cover;
 	background-position: center;
-	padding: 220px;	
+	padding: 220px;
+	border: 1px;
+	border-style: double;
 }
 
 .main h2{
@@ -51,8 +58,8 @@ body {
 	background: black;
 	color: white;
 	border-radius: 0;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 
@@ -79,21 +86,21 @@ body {
 		display:flex;
 		justify-content: center;
 		flex-wrap: nowrap;
-		border: 1px;
-		color: white;
+		border-style: double;
+		border: 1.5px;
+		
 		padding: 15px;
 
 
 
 		a {
 			display: inline-block;
-			margin: 0.1em;
-			padding: 1em;
+			margin: 5px;
+			padding: 5px;
 			font-weight:lighter;
-
 			background-color: rgba(35, 101, 128, 0.575);
-			border: 1.5px solid rgba(0, 0, 0, 0.575);
-			border-radius: 5%;
+			border: 1.5px inset rgb(255, 255, 255);
+			border-radius: 15%;
 		}
 
 		a:link,
@@ -106,8 +113,8 @@ body {
 
 	a:hover {
 		background-color: rgba(26, 59, 71, 0.575);
-
-		border: 2px;
+		border-radius: 20%;
+		border: 1.5 solid black;
 	}
 
 
@@ -123,15 +130,39 @@ body {
 	}
 }
 
-
-
-.imagen-fondo {
-	background-image: url(../assets/imageninicio.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+.card-1{
+	background: black;
+	background: linear-gradient(135deg, #5f5b1d 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px; 
 }
+
+.card-2{
+	background: black;
+	background: linear-gradient(135deg, #3c1d5f 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px; 
+}
+
+.card-3{
+	background: black;
+	background: linear-gradient(135deg, #1d5f36 23%, rgba(0, 0, 0, 0.575) 100%);
+	text-align: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 15px; 
+}
+
 
 .imagen-info {
 	background-image: url(../assets/fondocontacto2.jpg);
@@ -180,23 +211,6 @@ body {
 	width: 100%;
 }
 
-
-.footer {
-	background-image: $gradiente-footer;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-weight: 200;
-	color: black;
-	padding: 2em;
-	text-align: center;
-	bottom: 0;
-
-	a:link,
-	a:visited,
-	a:active {
-		text-decoration: none;
-
-	}
-}
 
 .list-group :hover {
 
@@ -397,36 +411,25 @@ body {
 	}
 }
 
-
-.card {
-	background: rgb(0, 0, 0);
-	background: linear-gradient(135deg, rgb(95, 91, 29) 23%, rgba(0, 0, 0, 0.575) 100%);
+.footer {
+	background: $gradiente-footer;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 200;
+	color: black;
+	padding: 2em;
 	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px;
-}
+	bottom: 0;
+	border: 1px;
+	border-style: double;
 
-.card2 {
-	background: rgb(0, 0, 0);
-	background: linear-gradient(135deg, rgb(60, 29, 95) 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px;
-}
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
 
-.card3 {
-	background: rgb(0, 0, 0);
-	background: linear-gradient(135deg, rgb(29, 95, 54) 23%, rgba(0, 0, 0, 0.575) 100%);
-	text-align: center;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	padding-bottom: 15px;
+	}
 }
